@@ -58,7 +58,7 @@ def convert_image_to_pdf(image):
 
 # 📌 4️⃣ **Foydalanuvchi uchun PDF yaratish va S3'ga yuklash**
 def generate_user_pdf(user):
-    unique_code = int(uuid.uuid4())[:8]
+    unique_code = str(uuid.uuid4())[:8]
     pdf_filename = f"warranty_card_{unique_code}.pdf"
 
     # 📆 **Bugungi sana avtomatik**
