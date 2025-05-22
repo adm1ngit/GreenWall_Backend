@@ -70,22 +70,22 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
 }
-CORS_ALLOW_ALL_ORIGINS = False
+# CORS_ALLOW_ALL_ORIGINS = False
 
-CORS_ALLOWED_ORIGINS = [
-    "https://greenwalluz-4a1f8b314ff2.herokuapp.com",
-    "http://localhost:8000",
-    "https://www.uzgreenwall.com",
-    "http://localhost:5173",
+# CORS_ALLOWED_ORIGINS = [
+#     "https://greenwalluz-4a1f8b314ff2.herokuapp.com",
+#     "http://localhost:8000",
+#     "https://www.uzgreenwall.com",
+#     "http://localhost:5173",
     
-]
-CSRF_TRUSTED_ORIGINS = [
-    "https://www.uzgreenwall.com",
-    "https://greenwalluz-4a1f8b314ff2.herokuapp.com",
-]
+# ]
+# CSRF_TRUSTED_ORIGINS = [
+#     "https://www.uzgreenwall.com",
+#     "https://greenwalluz-4a1f8b314ff2.herokuapp.com",
+# ]
 
 
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_CREDENTIALS = True
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
