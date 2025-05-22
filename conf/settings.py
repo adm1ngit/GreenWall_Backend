@@ -130,23 +130,17 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 AUTH_USER_MODEL = "warranty_card.Admin"
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.getenv('Database'),
-#         'USER': os.getenv('User'),
-#         'PASSWORD': os.getenv('Password'),
-#         'HOST': os.getenv('Host'),
-#         'PORT': os.getenv('Port'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('Database'),
+        'USER': os.getenv('User'),
+        'PASSWORD': os.getenv('Password'),
+        'HOST': os.getenv('Host'),
+        'PORT': os.getenv('Port'),
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
