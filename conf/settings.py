@@ -10,7 +10,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = '84ufij489fj4f9u50fkw09qivk409ufb.yey3egdg3f3'
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://greenwalluz-4a1f8b314ff2.herokuapp.com', '*']
+ALLOWED_HOSTS = ['greenwalluz-4a1f8b314ff2.herokuapp.com', '*']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'http')
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
