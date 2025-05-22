@@ -7,5 +7,4 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ["name", "surname", "phone", "address"]
 
     def create(self, validated_data):
-        validated_data["username"] = f"{validated_data['name']}{validated_data['surname']}".replace(" ", "").lower()
-        return super().create(validated_data)
+        return User.objects.create(**validated_data)
