@@ -95,7 +95,6 @@ def generate_user_pdf(user):
             Key=s3_key,
             Body=pdf_content,
             ContentType="application/pdf",
-            ExtraArgs={"ACL": "public-read"},
         )
 
         # 🌐 5️⃣ **S3'dagi PDF fayl URL'si**
