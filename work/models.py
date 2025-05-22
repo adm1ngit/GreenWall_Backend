@@ -19,4 +19,4 @@ class ProjectMedia(models.Model):
     file_url = models.URLField()
 
     def __str__(self):
-        return f"Media for {self.project.title_uz} - {self.file.name}"
+        return f"Media for {self.project.title_uz} - {self.file_url}"
