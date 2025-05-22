@@ -103,4 +103,5 @@ def generate_user_pdf(user):
         return pdf_url  # ✅ Endi `print` emas, to‘g‘ridan-to‘g‘ri `pdf_url` qaytadi
 
     except Exception as e:
-        return None  # ❌ Xatolik bo‘lsa `None` qaytariladi
+        print(f"❌ PDF yaratishda xatolik: {str(e)}")
+        return None
