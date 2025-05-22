@@ -12,7 +12,6 @@ from reportlab.lib.colors import black
 from PIL import Image, ImageDraw, ImageFont
 import requests
 
-# ✅ AWS S3 sozlamalari
 s3_client = boto3.client(
     "s3",
     aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
