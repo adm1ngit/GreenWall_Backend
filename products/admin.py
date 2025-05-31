@@ -8,7 +8,7 @@ class ProductMediaInline(admin.TabularInline):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title_uz', 'short_description', 'price')
+    list_display = ('id', 'title_uz', 'short_description')
     inlines = [ProductMediaInline]
 
     def short_description(self, obj):
