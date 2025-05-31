@@ -14,6 +14,7 @@ from rest_framework_simplejwt.views import (
 urlpatterns = [
         path("",include("warranty_card.urls")),
         path('greenwall/login/admin/', admin.site.urls),
+        path("api/", include("auth_Admin.urls")),
         path('api/projects/', ProjectListCreateView.as_view(), name='project-list-create'),
         path('api/projects/<int:pk>/', ProjectListCreateView.as_view(), name='project-detail' ),
         path('api/stats/', StatsListView.as_view(), name='stats-list'),

@@ -1,8 +1,6 @@
-from .views import RegisterView, LoginView
 from django.urls import path
-from rest_framework.routers import DefaultRouter
+from .views import UserSubmissionCreateView
 
 urlpatterns = [
-    path("register/", RegisterView.as_view(), name='register'),
-    path("login/", LoginView.as_view(), name='login'),
+    path('submit/', UserSubmissionCreateView.as_view(), name='submit-user'),
 ]
